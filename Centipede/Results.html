@@ -1,0 +1,29 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Results{{ endblock }}
+
+{{ block content }}
+
+
+<img src="{{ static 'centipede_folder/centipede_tree_0.png' }}" width="800"  align="middle" vspace="100"/>
+
+<br>
+<br>
+
+<p>
+    The game ended with Player {{ ender }} playing {{ end_decision }} on Round {{ end_round }}.
+</p>
+
+<p>
+       You were Player {{player.id_in_group}} and your final payoff was {{player.payoff}}  
+</p>
+<p>
+This is round {{player.round_number}} of {{Constants.num_rounds}} rounds.
+</p>
+
+{{ if player.round_number < Constants.num_rounds}}
+{{ next_button }}
+{{ endif }}
+
+                         
+
+{{ endblock }}

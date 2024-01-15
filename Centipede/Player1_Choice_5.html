@@ -1,0 +1,31 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Player 1 Final Choice{{ endblock }}
+
+{{ block content }}
+
+<img src="{{ static 'centipede_folder/centipede_tree_5.png' }}" width="800"  align="middle" vspace="100"/>
+
+<p>
+    Will you stop the game and get a return of {{Constants.p1_payoff_5}} and give the other player a return of {{Constants.p2_payoff_5}}? 
+</p>
+
+<p>
+   Or will you continue and get a return of {{Constants.p1_payoff_6}} and give the other player a return of {{Constants.p2_payoff_6}}? 
+</p>
+
+<div class="form-group required">
+    <table class="table table-bordered text-center" style="width: auto; margin: auto">
+        <tr>
+            <td><button name="p1_choice_5" value="Continue" class="btn btn-primary btn-large">I will continue.</button></td>
+        </tr>
+        <tr>
+        <td><button name="p1_choice_5" value="Stop" class="btn btn-primary btn-large">I will Stop</button></td>
+        </tr>
+                    
+    </table>
+</div>
+
+{{ next_button }}
+
+
+{{ endblock }}

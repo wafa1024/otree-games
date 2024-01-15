@@ -1,0 +1,26 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Introduction{{ endblock }}
+
+{{ block content }}
+
+<img src="{{ static 'centipede_folder/centipede_tree_0.png' }}" width="800"  align="middle" vspace="100"/>
+
+<p>
+    Instructions: 
+</p>
+
+<p>
+    Above is the game tree. 
+</p>
+
+<p>
+    {{if player.id_in_group == 1}}
+    You are Player 1 and will go first.
+    {{else}}
+    You are Player 2 and will go second if Player 1 decides to continue.
+    {{endif}}
+</p>
+
+{{ next_button }}
+
+{{ endblock }}

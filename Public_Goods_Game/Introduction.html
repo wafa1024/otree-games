@@ -1,0 +1,26 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Instructions{{ endblock }}
+
+{{ block content }}
+
+<p>
+You will be playing a public goods game with the other {{session.num_participants}} students in the section.
+</p>
+
+<p>
+You will start with an endowment of {{Constants.endowment}} points. You can keep the 10 points, or contribute any number of them to a public good. Any points that you contribute are multiplied by {{Constants.multiplier}} with the result divided equally between all of the players.
+</p>
+
+<p>
+If all of the players keep their endowment (contributing 0 points to the public good), everyone will end up with {{Constants.endowment}} points. 
+</p>
+
+<p>
+If all of the players contribute the full {{Constants.endowment}} points to the public good, everyone will end up with {{maximum_score}} points.
+</p>
+
+
+
+{{ next_button }}
+
+{{ endblock }}

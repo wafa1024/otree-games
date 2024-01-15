@@ -1,0 +1,26 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Results{{ endblock }}
+
+{{ block content }}
+
+
+<p>
+    You started with an endowment of {{Constants.endowment}}. You contributed {{player.contribution}} to the public good.
+</p>
+  
+<p>
+    There were {{session.num_participants}} players in this game. They contributed a total of {{group.total_contribution}} to the public good which resulted in a return of {{group.individual_share}} for each player. 
+</p>
+
+<p>
+    Your payoff was {{player.payoff}}, which was your endowment of {{Constants.endowment}} points minus your contribution of {{player.contribution}} points plus your share of the public good of {{group.individual_share}} points.
+</p>
+
+{{ if player.round_number < Constants.num_rounds }}
+     {{ next_button }}
+{{endif}}
+
+
+
+
+{{ endblock }}

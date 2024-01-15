@@ -1,0 +1,31 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Player 2 Choice{{ endblock }}
+
+{{ block content }}
+
+<img src="{{ static 'centipede_folder/centipede_tree_4.png' }}" width="800"  align="middle" vspace="100"/>
+
+<p>
+    Will you stop the game and get a return of {{Constants.p2_payoff_4}} and give the other player a return of {{Constants.p1_payoff_4}}? 
+</p>
+
+<p>
+   Or will you continue to Player 1's turn? 
+</p>
+
+<div class="form-group required">
+    <table class="table table-bordered text-center" style="width: auto; margin: auto">
+        <tr>
+            <td><button name="p2_choice_4" value="Continue" class="btn btn-primary btn-large">I will continue.</button></td>
+        </tr>
+        <tr>
+        <td><button name="p2_choice_4" value="Stop" class="btn btn-primary btn-large">I will Stop</button></td>
+        </tr>
+                    
+    </table>
+</div>
+
+{{ next_button }}
+
+
+{{ endblock }}

@@ -1,0 +1,117 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Your Choice{{ endblock }}
+
+{{ block content }}
+
+<div class="form-group required">
+    <table class="table table-bordered text-center" style="width: auto; margin: auto">
+        <tr>
+            <th colspan="2" rowspan="2"></th>
+            <th colspan="8">The Other Player</th>
+        </tr>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+            <th>H</th>
+        </tr>
+        <tr>
+            <th rowspan="8"><span>You</span></th>
+            <td><button name="decision" value="A" class="btn btn-primary btn-large">Choose A</button></td>
+            <td>{{Constants.match_low_payoff}}, {{Constants.match_low_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td><button name="decision" value="B" class="btn btn-primary btn-large">Choose B</button></td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_low_payoff}}, {{Constants.match_low_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td><button name="decision" value="C" class="btn btn-primary btn-large">Choose C</button></td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_low_payoff}}, {{Constants.match_low_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td><button name="decision" value="D" class="btn btn-primary btn-large">Choose D</button></td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_low_payoff}}, {{Constants.match_low_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td><button name="decision" value="E" class="btn btn-primary btn-large">Choose E</button></td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_low_payoff}}, {{Constants.match_low_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td><button name="decision" value="F" class="btn btn-primary btn-large">Choose F</button></td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_high_payoff}}, {{Constants.match_high_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td><button name="decision" value="G" class="btn btn-primary btn-large">Choose G</button></td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_low_payoff}}, {{Constants.match_low_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td><button name="decision" value="H" class="btn btn-primary btn-large">Choose H</button></td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_low_payoff}}, {{Constants.match_low_payoff}}</td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+{{ endblock }}

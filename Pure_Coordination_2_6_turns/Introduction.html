@@ -1,0 +1,23 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Introduction{{ endblock }}
+
+{{ block content }}
+
+
+
+<p>
+    The payoffs for the pure coordination game are as follows:
+</p>
+
+
+
+<ul>
+    <li>If you both play Left or both play Right, you both recieve a payoff of {{Constants.both_cooperate_payoff}}.</li>
+     <li>If you play Left, but the other player plays Right, you both recieve {{Constants.betrayed_payoff}}</li>
+    <li>If you play Right, but the other player plays Left, you both recieve {{Constants.betrayed_payoff}}</li>
+</ul>
+
+
+{{ next_button }}
+
+{{ endblock }}

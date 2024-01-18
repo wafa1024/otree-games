@@ -1,0 +1,124 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Introduction{{ endblock }}
+
+{{ block content }}
+
+
+
+<p>
+    The payoffs for the pure coordination game are as follows:
+</p>
+
+<div class="form-group required">
+    <table class="table table-bordered text-center" style="width: auto; margin: auto">
+        <tr>
+            <th colspan="2" rowspan="2"></th>
+            <th colspan="8">The Other Player</th>
+        </tr>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+            <th>H</th>
+        </tr>
+        <tr>
+            <th rowspan="9"><span>You</span></th>
+            <td>A</td>
+            <td>{{Constants.match_high_payoff}}, {{Constants.match_high_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_high_payoff}}, {{Constants.match_high_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_high_payoff}}, {{Constants.match_high_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_low_payoff}}, {{Constants.match_low_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_high_payoff}}, {{Constants.match_high_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_high_payoff}}, {{Constants.match_high_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_high_payoff}}, {{Constants.match_high_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.no_match_payoff}}, {{Constants.no_match_payoff}}</td>
+            <td>{{Constants.match_high_payoff}}, {{Constants.match_high_payoff}}</td>
+        </tr>
+    </table>
+</div>
+
+
+
+{{ next_button }}
+
+{{ endblock }}

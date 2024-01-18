@@ -1,0 +1,48 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Choose a map location to meet.{{ endblock }}
+
+{{ block content }}
+
+<img src="{{ static 'coord_map_folder/Coord_Map_3_no_comm.png' }}"/>
+
+Please feel free to chat with the other players:
+
+{{ chat }}
+
+<div class="form-group required">
+    <table class="table table-bordered text-center" style="width: auto; margin: auto">
+        <tr>
+            <th> </th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td><button name="decision" value="A1" class="btn btn-primary btn-large">A1</button></td>
+            <td><button name="decision" value="A2" class="btn btn-primary btn-large">A2</button></td>
+            <td><button name="decision" value="A3" class="btn btn-primary btn-large">A3</button></td>
+            <td><button name="decision" value="A4" class="btn btn-primary btn-large">A4</button></td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td><button name="decision" value="B1" class="btn btn-primary btn-large">B1</button></td>
+            <td><button name="decision" value="B2" class="btn btn-primary btn-large">B2</button></td>
+            <td><button name="decision" value="B3" class="btn btn-primary btn-large">B3</button></td>
+            <td><button name="decision" value="B4" class="btn btn-primary btn-large">B4</button></td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td><button name="decision" value="C1" class="btn btn-primary btn-large">C1</button></td>
+            <td><button name="decision" value="C2" class="btn btn-primary btn-large">C2</button></td>
+            <td><button name="decision" value="C3" class="btn btn-primary btn-large">C3</button></td>
+            <td><button name="decision" value="C4" class="btn btn-primary btn-large">C4</button></td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+{{ endblock }}
